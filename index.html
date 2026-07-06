@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeev Sadayappan Vinoth - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./Logo.png">
+
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=./en/index.html">
+    </noscript>
+
+    <script>
+        // Automatic Browser Language Detection
+        try {
+            const userLang = navigator.language || navigator.userLanguage;
+
+            // If the user's browser language starts with 'de' (de, de-DE, de-AT, de-CH)
+            if (userLang.toLowerCase().startsWith('de')) {
+                window.location.href = "./de/index.html";
+            } else {
+                // Default to English for the rest of the world
+                window.location.href = "./en/index.html";
+            }
+        } catch (e) {
+            // Safe fallback if anything errors out
+            window.location.href = "./en/index.html";
+        }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#131313] text-[#e6e6e6] flex flex-col items-center justify-center min-h-screen font-sans p-6">
+
+    <div class="text-center space-y-4">
+        <div class="inline-block w-12 h-12 border-4 border-[#00ffc2] border-t-transparent rounded-full animate-spin"></div>
+        <p class="text-sm tracking-widest text-[#e6e6e6]/60 uppercase font-bold">Loading Portfolio / Portfolio wird geladen...</p>
+
+        <div class="pt-8 text-xs space-x-4 opacity-40 hover:opacity-100 transition-opacity">
+            <a href="./en/index.html" class="hover:text-[#00ffc2] underline">English Version</a>
+            <span>•</span>
+            <a href="./de/index.html" class="hover:text-[#00ffc2] underline">Deutsche Version</a>
+        </div>
+    </div>
+
+</body>
+</html>
