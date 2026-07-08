@@ -10,12 +10,13 @@ Since this is hosted as a GitHub Project Page, you can access the localized live
 ---
 
 ## 📂 Project Structure
-The repository is organized into distinct language directories to manage translations cleanly and efficiently without relying on heavy JavaScript localization libraries:
+The repository features an automatic language detection entry point at the root level that dynamically channels incoming browser request payloads without third-party dependencies:
 
 ```text
 portfolio/
+├── index.html        (Root Multi-Routing / Auto-Language Detection Script)
+├── favicon.ico       (Custom SV Brand Token Identity Asset)
 ├── en/
-│   └── index.html     (English Portfolio - Tailwind CSS)
-├── de/
-│   └── index.html     (German Portfolio - Tailwind CSS)
-└── README.md          (Repository Documentation)
+│   └── index.html    (English Production Build - Tailwind CSS & Bento Grid)
+└── de/
+    └── index.html    (German Production Build - Tailwind CSS & Bento Grid)
